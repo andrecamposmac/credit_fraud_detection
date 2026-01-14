@@ -85,7 +85,7 @@ A análise demonstra que **falsos positivos têm custo operacional muito superio
 
 Aplicativo feito com a biblioteca Streamlit (arquivo: aplicativo_streamlit.py). Para visualizar o aplicativo, instale a biblioteca Streamlit e suas dependências executando o comando no terminal.
 
-"pip install streamlit plotly pandas scikit-learn joblib xgboost"
+"pip install streamlit"
 
 Em seguida, navegue até a pasta do projeto e digite
 
