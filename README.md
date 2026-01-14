@@ -81,10 +81,23 @@ A análise demonstra que **falsos positivos têm custo operacional muito superio
 - 11 falsos positivos (XGBoost) = operação sustentável
 - Trade-off entre recall e precision é crítico para escalabilidade
 
+## Dashboard interativo com Streamlit
+
+Aplicativo feito com a biblioteca Streamlit (arquivo: aplicativo_streamlit.py). Para visualizar o aplicativo, instale a biblioteca Streamlit e suas dependências executando o comando no terminal.
+
+"pip install streamlit plotly pandas scikit-learn joblib xgboost"
+
+Em seguida, navegue até a pasta do projeto e digite
+
+"streamlit run aplicativo_streamlit.py". 
+
+O navegador abrirá automaticamente na página do aplicativo. Para que o aplicativo funcione corretamente, certifique-se de que os arquivos "creditcard.csv" (dataset original com 284.807 transações) e "xgb_fraude.pkl" (modelo XGBoost treinado) estão localizados na mesma pasta do arquivo aplicativo_streamlit.py. O aplicativo possui duas páginas principais: a primeira página exibe um dashboard interativo com cinco visualizações diferentes obtidas através da análise realizada no arquivo "fraud_detection.ipynb", incluindo histogramas de distribuição de valores, timeline temporal das transações, boxplots comparativos em escala logarítmica e proporção de classes.
+
+Na segunda página intitulada "Inserir Nova Transação", é possível realizar a classificação de novas transações através do upload de um arquivo CSV contendo dados no mesmo formato do dataset original (colunas: Time, V1-V28 e Amount). Para fins de teste e praticidade, utilize o arquivo "dados_teste_app.csv" já disponibilizado no projeto. Após o upload do arquivo e clique no botão "Classificar Transações", o aplicativo processará os dados utilizando o modelo XGBoost e gerará um novo arquivo CSV contendo todas as colunas originais mais duas colunas adicionais: "Classe Predita" (indicando se a transação é fraude ou não) e "Probabilidade Fraude (%)" (percentual de probabilidade de ser uma fraude). Este arquivo resultante pode ser baixado diretamente através do botão de download disponibilizado na interface.  
+
 ## Próximos Passos Sugeridos
 
 - Implementação de API REST para produção
-- Dashboard interativo com Streamlit
 - Monitoramento de performance em produção
 - Testes A/B com diferentes limiares de decisão
 - Integração com sistemas de pagamento em tempo real
