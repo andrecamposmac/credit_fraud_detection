@@ -117,4 +117,5 @@ MIT License - sinta-se à vontade para usar e modificar o código.
 Projeto desenvolvido como estudo prático de machine learning aplicado a detecção de fraudes financeiras, com foco especial nas implicações operacionais de cada modelo.
 
 Fonte de dados: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
 Referências: [1] https://wandb.ai/mostafaibrahim17/ml-articles/reports/Fraud-detection-techniques-explained-with-tutorial---VmlldzoxNTI5ODg3MQ. Acessado em: 24/02/2026.
