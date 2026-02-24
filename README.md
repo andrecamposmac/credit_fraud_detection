@@ -2,6 +2,12 @@
 
 Este notebook Jupyter apresenta uma análise completa de detecção de fraudes em transações de cartão de crédito utilizando o dataset clássico do Kaggle (284.807 transações com 0,17% de fraudes). O projeto compara quatro algoritmos de machine learning com foco em métricas operacionais relevantes para cenários reais de negócio.
 
+## Context
+
+Fraud detection is a core safeguard for the financial performance, operational continuity, and reputation of modern organizations. In industries such as banking, e-commerce, telecommunications, insurance, and healthcare, fraud-related losses are still increasing. TransUnion’s 2025 Top Fraud Trends Report found that, among 1,200 global business leaders surveyed, companies reported losing an average of 7.7% of their annual revenue to fraud, showing how deeply fraud affects routine digital operations. In addition to monetary losses, businesses also face regulatory obligations under frameworks such as PSD2, PCI DSS, and KYC/AML, which require strong monitoring practices, dependable identity verification, and auditable risk controls.[1]
+
+The problem is even more difficult because fraud tactics change faster than traditional defenses can adapt. Fixed rules can flag obvious irregularities, but they are often ineffective against sophisticated, coordinated, and constantly evolving schemes. This is a real and growing issue: in 2024, Americans lost $12.5 billion to fraud, a 25% increase from the previous year. AI, machine learning, and generative models are reshaping fraud prevention by processing large volumes of behavioral, transactional, and contextual data to uncover subtle patterns, reduce false positives, and respond quickly to new threats. Effective fraud detection is not only about blocking fraudulent transactions, but also about protecting customer trust, satisfying regulatory requirements, and keeping the experience smooth for legitimate users.[1]
+
 ## Funcionalidades Implementadas
 
 - Análise Exploratória de Dados completa com visualizações
@@ -111,3 +117,4 @@ MIT License - sinta-se à vontade para usar e modificar o código.
 Projeto desenvolvido como estudo prático de machine learning aplicado a detecção de fraudes financeiras, com foco especial nas implicações operacionais de cada modelo.
 
 Fonte de dados: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+Referências: [1] https://wandb.ai/mostafaibrahim17/ml-articles/reports/Fraud-detection-techniques-explained-with-tutorial---VmlldzoxNTI5ODg3MQ. Acessado em: 24/02/2026.
